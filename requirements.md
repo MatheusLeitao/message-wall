@@ -6,6 +6,7 @@ Code Challange - Messages Wall
 - [x] User will post message on the wall
 - [x] User will authenticate through email only
 - [x] (optional) The message may be deleted.
+- [] New messages will be realtime displayed
 - [] Generate Swagger documentation.
 - [] Add dataloader
 

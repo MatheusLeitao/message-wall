@@ -9,11 +9,18 @@ import { GraphQLModule } from '@nestjs/graphql';
 import MessageResolver from './resolvers/message.resolver';
 
 
-const graphQLImports: any = [ UserResolver, MessageResolver ];
+const graphQLImports: any = [UserResolver, MessageResolver];
 
 
 @Module({
-  imports: [TypeOrmModule.forRoot(ormOptions), RepoModule, GraphQLModule.forRoot({ autoSchemaFile: 'schema.gql', playground: true}), ...graphQLImports],
+  imports: [
+    TypeOrmModule.forRoot(ormOptions),
+    RepoModule,
+    GraphQLModule.forRoot({
+      autoSchemaFile: 'schema.gql', playground: true
+    }),
+    ...graphQLImports
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
