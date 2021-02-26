@@ -2,11 +2,12 @@ Code Challange - Messages Wall
 ------------------------
 
 ## Functional Requirements
-- [] User email only signup
-- [] User will post message on the wall
-- [] User will authenticate through email only
-- [] (optional) The message may be deleted.
-
+- [x] User email only signup
+- [x] User will post message on the wall
+- [x] User will authenticate through email only
+- [x] (optional) The message may be deleted.
+- [] Generate Swagger documentation.
+- [] Add dataloader
 
 ## Non Functional Requirements
 - Nest.js
@@ -15,4 +16,4 @@ Code Challange - Messages Wall
 - React + Apolo Client
 
 ## Exchanges Rules (Business Rules)
-- User cannot delete another person's message.
+- [x] User cannot delete another user's message.
